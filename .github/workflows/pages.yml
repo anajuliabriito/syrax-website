@@ -1,0 +1,49 @@
+name: Publish site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Unpack uploaded zip into the repo (one-off fix)
+        if: hashFiles('syrax-website.zip') != ''
+        run: |
+          set -e
+          SITE_URL="https://anajuliabriito.github.io/syrax-website"
+          unzip -q syrax-website.zip -d /tmp/unzipped
+          cp -a /tmp/unzipped/syrax-website/. .
+          rm syrax-website.zip
+          # Point canonical URLs, Open Graph tags, sitemap and robots.txt at the Pages URL
+          grep -rlZ 'https://syrax-preview.example' docs source | xargs -0 sed -i "s#https://syrax-preview.example#${SITE_URL}#g"
+          # The 404 page is served from any depth, so give it an absolute base for its relative links
+          sed -i '0,/<head>/s##<head>\n<base href="/syrax-website/">#' docs/404.html
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Unpack site from zip and set GitHub Pages URL"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4
