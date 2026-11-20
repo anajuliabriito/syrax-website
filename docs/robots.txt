@@ -1,0 +1,5 @@
+# Preview build: search engines are asked not to index this site yet.
+User-agent: *
+Disallow: /
+
+Sitemap: https://anajuliabriito.github.io/syrax-website/sitemap.xml

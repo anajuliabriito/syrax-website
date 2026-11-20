@@ -1,0 +1,44 @@
+# Syrax Solutions
+
+> Syrax Solutions is a Sydney-based Australian company that provides automated drone herd monitoring for grazing properties. A drone-in-a-box (DJI Dock 3) lives on the property, flies a mapped route each day, and Syrax software turns the flight into a cattle head count by paddock, plus water trough, feed bunk, fence line and welfare checks. Results are sent by SMS, daily summary, weekly email and a phone and web app.
+
+Key facts:
+- Service area: Australia-wide. Based in Sydney, NSW.
+- What it counts: cattle, by paddock, compared with the previous flight. Each report includes the aerial photo with every animal marked.
+- Flight timing: counting flights run mid-morning, when shadows are short, so cattle under trees are easier to see.
+- Hardware: a weatherproof dock and an enterprise drone with visual and thermal cameras. Syrax assesses the property, installs the dock and maps routes.
+- Property needs: power at the dock site and a mobile or satellite internet connection.
+- Welfare flags are prompts to check an animal, not a veterinary diagnosis.
+- Individual animal identification is not currently offered.
+- Pricing: a fixed quote after a property assessment.
+
+## Product
+- [Drone cattle counting, every day, by paddock](https://anajuliabriito.github.io/syrax-website/cattle-counting/): Automated drone cattle counting for Australian grazing properties. A docked drone counts every head by paddock each day and texts you what changed.
+- [Water and feed, checked from the air every day](https://anajuliabriito.github.io/syrax-website/water-and-feed-monitoring/): Check every water trough and feed bunk from the air each day. Syrax flags low troughs and empty bunks before your cattle go without.
+- [Fence breaks and animals that need a look, found the same day](https://anajuliabriito.github.io/syrax-website/fence-and-welfare-checks/): Find fence breaks, open gates and animals that need attention the same day. Daily drone checks for Australian cattle properties.
+- [How Syrax works](https://anajuliabriito.github.io/syrax-website/how-it-works/): A weatherproof dock on your property, a drone on a daily schedule and software that tells you what changed. See how Syrax works.
+
+## Company
+- [Built for cattle you can't always see](https://anajuliabriito.github.io/syrax-website/who-its-for/): Daily drone herd monitoring for owner-operators, station managers, agistment and absentee owners, and multi-property cattle operations in Australia.
+- [We turn a drone flight into answers](https://anajuliabriito.github.io/syrax-website/about/): Syrax is a Sydney-based company building software that turns a daily drone flight into answers for Australian graziers.
+- [Frequently asked questions](https://anajuliabriito.github.io/syrax-website/faq/): Answers on setup, drone docks, licences, counting accuracy, data and cost for Syrax automated cattle monitoring.
+- [Talk to us](https://anajuliabriito.github.io/syrax-website/contact/): Talk to Syrax about automated drone cattle counting and property checks. Get a property assessment and a fixed quote.
+
+## Guides
+- [Why mid-morning flights give the most accurate cattle counts](https://anajuliabriito.github.io/syrax-website/resources/mid-morning-cattle-counts/): Long shadows hide cattle. Here's why Syrax schedules counting flights mid-morning, and how timing affects drone cattle counts.
+- [Drone counts vs mustering: what a stock count really costs](https://anajuliabriito.github.io/syrax-website/resources/drone-count-vs-mustering/): A traditional stock count takes people, fuel and days. Here's how drone counting changes the cost of knowing what's on hand.
+- [How a drone-in-a-box works on a cattle property](https://anajuliabriito.github.io/syrax-website/resources/drone-in-a-box-cattle/): A plain-English guide to drone docks for graziers: what the dock does, how flights are scheduled and what your property needs.
+
+## FAQ
+- What does setup involve? A property assessment, installing the dock and mapping your routes. We handle all of it.
+- What does my property need? Power at the dock site and a mobile or satellite connection. We check both in the assessment.
+- Can I use a drone I already own? Syrax is built around the DJI Dock 3. If you already have DJI enterprise equipment, we'll check whether it can be used.
+- Does anyone need to fly the drone? No. The dock launches, lands and charges it on schedule.
+- Do I need a drone licence? No. We handle the operating requirements as part of setup.
+- Will the drone stress my cattle? It flies well above the herd on the same route every day. Cattle get used to it quickly.
+- What happens in bad weather? The dock waits out unsafe conditions and flies when it's safe.
+- Why do flights run mid-morning? Short shadows. Cattle under trees are easiest to see, so counts are most reliable.
+- How do I know a count is right? Every report shows the photo with every animal marked, and compares it with the previous flight.
+- Does it identify individual animals? Not yet. Syrax counts head by paddock and flags changes.
+- Who can see my data? Only the people you give access to. Every account uses secure sign-in.
+- What does it cost? It depends on your property. You get a fixed quote after the assessment.

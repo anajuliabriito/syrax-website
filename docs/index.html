@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syrax | Automated Drone Cattle Counting for Australian Properties</title>
+<meta name="description" content="A drone that lives on your property counts your cattle, checks your water and fences, and texts you what changed. Automated herd monitoring for Australian graziers.">
+<link rel="canonical" href="https://anajuliabriito.github.io/syrax-website/">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Syrax Solutions">
+<meta property="og:title" content="Syrax | Automated Drone Cattle Counting for Australian Properties">
+<meta property="og:description" content="A drone that lives on your property counts your cattle, checks your water and fences, and texts you what changed. Automated herd monitoring for Australian graziers.">
+<meta property="og:url" content="https://anajuliabriito.github.io/syrax-website/">
+<meta property="og:image" content="https://anajuliabriito.github.io/syrax-website/assets/workflow-poster.jpg">
+<meta property="og:locale" content="en_AU">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/syrax-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#0B0B0B}
+a{color:#0B0B0B}a:hover{color:#8A6D12}
+input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #C9A227;outline-offset:2px}
+summary{list-style:none;cursor:pointer}summary::-webkit-details-marker{display:none}
+details[open] .syrax-plus{transform:rotate(45deg)}
+
+img,video{max-width:100%}
+</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://anajuliabriito.github.io/syrax-website/#org",
+   "name": "Syrax Solutions",
+   "url": "https://anajuliabriito.github.io/syrax-website/",
+   "logo": "https://anajuliabriito.github.io/syrax-website/assets/syrax-icon.png",
+   "description": "Automated drone herd monitoring for Australian grazing properties: daily cattle counts, water, feed, fence and welfare checks.",
+   "areaServed": {
+    "@type": "Country",
+    "name": "Australia"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sydney",
+    "addressRegion": "NSW",
+    "addressCountry": "AU"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://anajuliabriito.github.io/syrax-website/#website",
+   "url": "https://anajuliabriito.github.io/syrax-website/",
+   "name": "Syrax Solutions",
+   "publisher": {
+    "@id": "https://anajuliabriito.github.io/syrax-website/#org"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does anyone need to fly the drone?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The dock launches, lands and charges it on schedule."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need a drone licence?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. We handle the operating requirements as part of setup."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why do flights run mid-morning?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Short shadows. Cattle under trees are easiest to see, so counts are most reliable."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will the drone stress my cattle?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It flies well above the herd on the same route every day. Cattle get used to it quickly."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does my property need?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Power at the dock and a mobile or satellite connection. We check both in the assessment."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does it cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on your property. You get a fixed quote after the assessment."
+     }
+    }
+   ]
+  }
+ ]
+}</script>
+</head>
+<body>
+<div style="background: #F7F6F3; color: #0B0B0B; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased">
+
+<!-- ================= HERO ================= -->
+<div style="background: #0B0B0B; color: #F2F0EA">
+<header style="background: #0B0B0B">
+<nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="./" aria-label="Syrax Solutions home" style="display: flex; align-items: center"><img src="assets/syrax-logo-gold.png" alt="Syrax Solutions" style="height: 38px; width: auto; display: block"></a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
+<a href="cattle-counting/" style="text-decoration: none; color: #CFCAC0">Cattle counting</a>
+<a href="water-and-feed-monitoring/" style="text-decoration: none; color: #CFCAC0">Water and feed</a>
+<a href="how-it-works/" style="text-decoration: none; color: #CFCAC0">How it works</a>
+<a href="who-its-for/" style="text-decoration: none; color: #CFCAC0">Who it&#x27;s for</a>
+<a href="resources/" style="text-decoration: none; color: #CFCAC0">Resources</a>
+<a href="about/" style="text-decoration: none; color: #CFCAC0">About</a>
+<a href="contact/" style="text-decoration: none; color: #0B0B0B; background: #D4AF37; font-weight: 600; padding: 10px 18px; border-radius: 4px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Talk to us</a>
+</div>
+</nav>
+</header>
+
+<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px 96px">
+<div style="max-width: 820px">
+<h1 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2.75rem, 5.4vw, 4.75rem); line-height: 1.02; letter-spacing: -0.03em">Every head counted. Every day.</h1>
+<p style="margin: 24px 0 0; max-width: 600px; font-size: 19px; line-height: 1.6; color: #BDB9AE">A drone that lives on your property counts your cattle, checks your water and fences, and texts you what changed.</p>
+<div style="margin-top: 36px"><a href="#contact" style="text-decoration: none; color: #0B0B0B; background: #D4AF37; font-weight: 600; font-size: 16px; padding: 14px 24px; border-radius: 4px; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">Get Syrax on your property</a></div>
+</div>
+<figure style="margin: 64px 0 0">
+<div style="position: relative; aspect-ratio: 16 / 9; background: #161616; border-radius: 6px; overflow: hidden">
+<video src="assets/syrax-workflow.mp4" poster="assets/workflow-poster.jpg" autoplay="" muted="" loop="" playsinline="" aria-label="Workflow overview: the dock launches the drone, cattle are detected and counted in each paddock, the drone returns to charge and the farmer receives the result on their phone" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"></video>
+</div>
+<figcaption style="margin-top: 12px; font-size: 13px; color: #8F8B82">Illustrative footage of the Syrax workflow.</figcaption>
+</figure>
+</section>
+</div>
+
+<!-- ================= FEATURES (alternating) ================= -->
+<section id="features" style="max-width: 1200px; margin: 0 auto; padding: 128px 32px 0">
+<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.022em; max-width: 760px">The daily paddock check, done from the air.</h2>
+
+<div style="display: flex; flex-wrap: wrap; flex-direction: row; gap: 64px; align-items: center; margin-top: 88px">
+<div style="flex: 1.15 1 460px; min-width: 0; aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden; background: #3A3426">
+<img src="assets/cattle-detection-aerial.jpg" alt="Aerial image with every animal outlined by a detection box" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block">
+</div>
+<div style="flex: 1 1 360px; min-width: 0">
+<span style="display: inline-flex; width: 44px; height: 44px; border-radius: 10px; background: #0B0B0B; color: #D4AF37; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M8 12h8M12 8v8"></path></svg></span>
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.022em; font-size: clamp(1.6rem, 2.4vw, 2.1rem); margin-top: 20px">Count every head, every day</h3>
+<ul style="list-style: none; margin: 24px 0 0; padding: 0">
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; font-size: 17px; color: #3E3D39">Counted paddock by paddock</li>
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; font-size: 17px; color: #3E3D39">Checked against yesterday, automatically</li>
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; font-size: 17px; color: #3E3D39">Every animal marked on the photo</li>
+
+</ul>
+<a href="cattle-counting/" style="display: inline-block; margin-top: 20px; font-size: 16px; font-weight: 600; color: #8A6D12; text-underline-offset: 4px">More on cattle counting</a>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; flex-direction: row-reverse; gap: 64px; align-items: center; margin-top: 88px">
+<div style="flex: 1.15 1 460px; min-width: 0; aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden; background: #3A3426">
+<img src="assets/drone-flyover-cattle.jpg" alt="The drone flying low over a paddock with cattle beneath it" style="width: 100%; height: 100%; object-fit: cover; object-position: center 60%; display: block">
+</div>
+<div style="flex: 1 1 360px; min-width: 0">
+<span style="display: inline-flex; width: 44px; height: 44px; border-radius: 10px; background: #0B0B0B; color: #D4AF37; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.7c3 3.6 6 7 6 10.3a6 6 0 0 1-12 0c0-3.3 3-6.7 6-10.3z"></path></svg></span>
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.022em; font-size: clamp(1.6rem, 2.4vw, 2.1rem); margin-top: 20px">Know your water and feed are right</h3>
+<ul style="list-style: none; margin: 24px 0 0; padding: 0">
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; font-size: 17px; color: #3E3D39">Low troughs flagged straight away</li>
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; font-size: 17px; color: #3E3D39">Feed left in each bunk, estimated</li>
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; font-size: 17px; color: #3E3D39">Checked on the same flight</li>
+
+</ul>
+<a href="water-and-feed-monitoring/" style="display: inline-block; margin-top: 20px; font-size: 16px; font-weight: 600; color: #8A6D12; text-underline-offset: 4px">More on water and feed</a>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; flex-direction: row; gap: 64px; align-items: center; margin-top: 88px">
+<div style="flex: 1.15 1 460px; min-width: 0; aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden; background: #3A3426">
+<img src="assets/drone-dock-paddock.jpg" alt="The drone in its dock beside a paddock with cattle grazing behind" style="width: 100%; height: 100%; object-fit: cover; object-position: 62% center; display: block">
+</div>
+<div style="flex: 1 1 360px; min-width: 0">
+<span style="display: inline-flex; width: 44px; height: 44px; border-radius: 10px; background: #0B0B0B; color: #D4AF37; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V7l4-4 4 4v14M12 21V7l4-4 4 4v14M4 11h16M4 16h16"></path></svg></span>
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.022em; font-size: clamp(1.6rem, 2.4vw, 2.1rem); margin-top: 20px">Catch problems before they spread</h3>
+<ul style="list-style: none; margin: 24px 0 0; padding: 0">
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; font-size: 17px; color: #3E3D39">Fence breaks and open gates flagged</li>
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; font-size: 17px; color: #3E3D39">Thermal flags for animals that need a look</li>
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; font-size: 17px; color: #3E3D39">Know exactly where to go</li>
+
+</ul>
+<a href="fence-and-welfare-checks/" style="display: inline-block; margin-top: 20px; font-size: 16px; font-weight: 600; color: #8A6D12; text-underline-offset: 4px">More on fences and welfare</a>
+</div>
+</div>
+
+</section>
+
+<!-- ================= STOP DRIVING ================= -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 128px 32px 0">
+<div style="background: #0B0B0B; color: #F2F0EA; border-radius: 10px; padding: clamp(32px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end; justify-content: space-between">
+<div style="flex: 1 1 420px; min-width: 0">
+<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.022em">Stop driving to find problems.</h2>
+<p style="margin: 16px 0 0; font-size: 19px; line-height: 1.6; color: #BDB9AE">One Queensland station spends this checking water alone.</p>
+</div>
+<div style="flex: 1 1 440px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px">
+
+<div style="border-top: 1px solid #3A3A3A; padding-top: 16px">
+<p style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; font-size: clamp(2.2rem, 4vw, 3.2rem); line-height: 1; color: #D4AF37">$120,000</p>
+<p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #A9A59B">a year checking and maintaining water</p>
+</div>
+
+<div style="border-top: 1px solid #3A3A3A; padding-top: 16px">
+<p style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; font-size: clamp(2.2rem, 4vw, 3.2rem); line-height: 1; color: #D4AF37">1,200 km</p>
+<p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #A9A59B">driven every week to check it</p>
+</div>
+
+<p style="grid-column: 1 / -1; margin: 0; font-size: 13px; color: #8F8B82">Source: Beef Central, Isis Downs</p>
+</div>
+</div>
+</section>
+
+<!-- ================= PHONE ================= -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 128px 32px 0">
+<div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 1 1 400px; min-width: 0">
+<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.022em">Know what changed before you head out.</h2>
+<p style="margin: 20px 0 0; font-size: 19px; line-height: 1.6; color: #3E3D39">One text after every flight. The full report when you want it.</p>
+<ul style="list-style: none; margin: 32px 0 0; padding: 0">
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; display: flex; justify-content: space-between; gap: 16px; font-size: 17px"><span style="font-weight: 600">SMS alerts</span><span style="color: #6B6A65">When something needs you</span></li>
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; display: flex; justify-content: space-between; gap: 16px; font-size: 17px"><span style="font-weight: 600">Daily summary</span><span style="color: #6B6A65">The day’s numbers</span></li>
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; display: flex; justify-content: space-between; gap: 16px; font-size: 17px"><span style="font-weight: 600">Weekly email</span><span style="color: #6B6A65">Trends for your records</span></li>
+
+<li style="border-top: 1px solid #DDD9D0; padding: 14px 0; display: flex; justify-content: space-between; gap: 16px; font-size: 17px"><span style="font-weight: 600">Phone and web app</span><span style="color: #6B6A65">Reports, photos, live view</span></li>
+
+</ul>
+</div>
+<div style="flex: 1 1 440px; min-width: 0">
+<div style="position: relative; aspect-ratio: 4 / 5; border-radius: 8px; overflow: hidden; background: #2A2620">
+<img src="assets/grazier-phone-alert.jpg" alt="A grazier in his kitchen reading a Syrax alert on his phone" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 38% center; display: block">
+<div style="position: absolute; left: 20px; right: 20px; bottom: 20px; background: rgba(248,247,244,0.94); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border-radius: 18px; padding: 14px 16px; box-shadow: 0 12px 32px rgba(0,0,0,0.28); display: flex; gap: 12px; align-items: flex-start">
+<img src="assets/syrax-icon.png" alt="" style="width: 38px; height: 38px; border-radius: 9px; flex: 0 0 auto; display: block">
+<div style="flex: 1 1 auto; min-width: 0">
+<div style="display: flex; justify-content: space-between; gap: 8px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.04em; color: #6B6A65">SYRAX</span>
+<span style="font-size: 12px; color: #6B6A65">10:12 am</span>
+</div>
+<p style="margin: 2px 0 0; font-size: 15px; font-weight: 600; line-height: 1.35; color: #0B0B0B">Riverview · 410 of 412 head</p>
+<p style="margin: 2px 0 0; font-size: 14px; line-height: 1.4; color: #3E3D39">2 not seen in Back Flat. Trough 3 low. Fence break on Hill Block.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= PRODUCT ================= -->
+<section id="product" style="max-width: 1200px; margin: 0 auto; padding: 128px 32px 0">
+<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.022em; max-width: 760px">Your whole property in one report.</h2>
+<p style="margin: 16px 0 0; font-size: 19px; line-height: 1.6; color: #3E3D39">Every animal marked on the photo. Every paddock checked against yesterday.</p>
+<div style="margin-top: 48px; background: #FFFFFF; border: 1px solid #DDD9D0; border-radius: 10px; overflow: hidden; box-shadow: 0 30px 60px -30px rgba(11,11,11,0.35)">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid #ECEAE4">
+<div style="display: flex; align-items: center; gap: 12px">
+<img src="assets/syrax-icon.png" alt="" style="width: 28px; height: 28px; border-radius: 6px; display: block">
+<span style="font-size: 15px; font-weight: 600">Riverview</span>
+<span style="font-size: 13px; line-height: 1.5; color: #6B6A65">Thursday 20 November · 9:30 am flight</span>
+</div>
+<span style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: #2F6B41; background: #EAF3EC; padding: 5px 12px; border-radius: 99px"><span style="width: 7px; height: 7px; border-radius: 50%; background: #2F6B41; display: inline-block"></span>Flight complete</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; padding: 24px">
+<div style="flex: 1.2 1 420px; min-width: 0; position: relative; aspect-ratio: 16 / 10; border-radius: 6px; overflow: hidden; background: #3A4A2E">
+<img src="assets/cattle-detection-aerial.jpg" alt="Aerial image of River Flats with each animal outlined by a detection box" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block">
+<span style="position: absolute; left: 12px; bottom: 12px; background: rgba(11,11,11,0.78); color: #F2F0EA; font-size: 13px; font-weight: 500; padding: 6px 10px; border-radius: 4px">River Flats · 142 detected</span>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: #ECEAE4; border: 1px solid #ECEAE4; border-radius: 6px; overflow: hidden; align-self: stretch">
+
+<div style="background: #FFFFFF; padding: 18px 20px">
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #6B6A65">Head counted</p>
+<p style="margin: 6px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; font-size: 32px; line-height: 1.1; color: #0B0B0B">410</p>
+<p style="margin: 4px 0 0; font-size: 13px; line-height: 1.5; color: #6B6A65">of 412 expected</p>
+</div>
+
+<div style="background: #FFFFFF; padding: 18px 20px">
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #6B6A65">Since yesterday</p>
+<p style="margin: 6px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; font-size: 32px; line-height: 1.1; color: #A3361F">−2</p>
+<p style="margin: 4px 0 0; font-size: 13px; line-height: 1.5; color: #6B6A65">Back Flat</p>
+</div>
+
+<div style="background: #FFFFFF; padding: 18px 20px">
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #6B6A65">Waters</p>
+<p style="margin: 6px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; font-size: 32px; line-height: 1.1; color: #8A5A00">1 low</p>
+<p style="margin: 4px 0 0; font-size: 13px; line-height: 1.5; color: #6B6A65">Trough 3</p>
+</div>
+
+<div style="background: #FFFFFF; padding: 18px 20px">
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #6B6A65">Fences</p>
+<p style="margin: 6px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; font-size: 32px; line-height: 1.1; color: #8A5A00">1 break</p>
+<p style="margin: 4px 0 0; font-size: 13px; line-height: 1.5; color: #6B6A65">Hill Block boundary</p>
+</div>
+
+</div>
+</div>
+<div style="padding: 0 24px 12px; overflow-x: auto">
+<table style="width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums">
+<thead>
+<tr style="text-align: left">
+<th scope="col" style="font-size: 13px; line-height: 1.5; color: #6B6A65; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #DDD9D0">Paddock</th>
+<th scope="col" style="font-size: 13px; line-height: 1.5; color: #6B6A65; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #DDD9D0; text-align: right">Yesterday</th>
+<th scope="col" style="font-size: 13px; line-height: 1.5; color: #6B6A65; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #DDD9D0; text-align: right">Today</th>
+<th scope="col" style="font-size: 13px; line-height: 1.5; color: #6B6A65; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #DDD9D0; text-align: right">Change</th>
+<th scope="col" style="font-size: 13px; line-height: 1.5; color: #6B6A65; font-weight: 500; padding: 10px 0 10px 24px; border-bottom: 1px solid #DDD9D0">Status</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; font-weight: 500">House Paddock</td>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; text-align: right; color: #6B6A65">86</td>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; text-align: right; font-weight: 600">86</td>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; text-align: right; color: #6B6A65">0</td>
+<td style="padding: 13px 0 13px 24px; border-bottom: 1px solid #F0EEE9"><span style="font-size: 13px; font-weight: 500; padding: 3px 10px; border-radius: 99px; color: #2F6B41; background: #EAF3EC">OK</span></td>
+</tr>
+
+<tr>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; font-weight: 500">River Flats</td>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; text-align: right; color: #6B6A65">142</td>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; text-align: right; font-weight: 600">142</td>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; text-align: right; color: #6B6A65">0</td>
+<td style="padding: 13px 0 13px 24px; border-bottom: 1px solid #F0EEE9"><span style="font-size: 13px; font-weight: 500; padding: 3px 10px; border-radius: 99px; color: #2F6B41; background: #EAF3EC">OK</span></td>
+</tr>
+
+<tr>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; font-weight: 500">Back Flat</td>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; text-align: right; color: #6B6A65">66</td>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; text-align: right; font-weight: 600">64</td>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; text-align: right; color: #A3361F">−2</td>
+<td style="padding: 13px 0 13px 24px; border-bottom: 1px solid #F0EEE9"><span style="font-size: 13px; font-weight: 500; padding: 3px 10px; border-radius: 99px; color: #A3361F; background: #F8E9E5">Check</span></td>
+</tr>
+
+<tr>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; font-weight: 500">Hill Block</td>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; text-align: right; color: #6B6A65">118</td>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; text-align: right; font-weight: 600">118</td>
+<td style="padding: 13px 0; border-bottom: 1px solid #F0EEE9; text-align: right; color: #6B6A65">0</td>
+<td style="padding: 13px 0 13px 24px; border-bottom: 1px solid #F0EEE9"><span style="font-size: 13px; font-weight: 500; padding: 3px 10px; border-radius: 99px; color: #2F6B41; background: #EAF3EC">OK</span></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section id="how" style="max-width: 1200px; margin: 0 auto; padding: 128px 32px 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px"><h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.022em; max-width: 760px">Three parts. No pilot. No one on site.</h2><a href="how-it-works/" style="font-size: 16px; font-weight: 600; color: #8A6D12; text-underline-offset: 4px">See how it works</a></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; margin-top: 48px">
+
+<div>
+<div style="aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden; background: #3A3426">
+<img src="assets/drone-dock-paddock.jpg" alt="The drone docked in its weatherproof station beside a paddock" style="width: 100%; height: 100%; object-fit: cover; object-position: 62% center; display: block">
+</div>
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; margin-top: 20px">The dock</h3>
+<p style="margin: 6px 0 0; font-size: 16px; line-height: 1.6; color: #55534D">Lives on your property. Launches, lands and charges the drone.</p>
+</div>
+
+<div>
+<div style="aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden; background: #3A3426">
+<img src="assets/drone-flyover-cattle.jpg" alt="The drone flying low over a paddock at sunrise" style="width: 100%; height: 100%; object-fit: cover; object-position: center 60%; display: block">
+</div>
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; margin-top: 20px">The drone</h3>
+<p style="margin: 6px 0 0; font-size: 16px; line-height: 1.6; color: #55534D">Visual and thermal cameras. Same route, every day.</p>
+</div>
+
+<div>
+<div style="aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden; background: #3A3426">
+<img src="assets/grazier-phone-alert.jpg" alt="A grazier reading his Syrax report on his phone" style="width: 100%; height: 100%; object-fit: cover; object-position: 38% center; display: block">
+</div>
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; margin-top: 20px">The software</h3>
+<p style="margin: 6px 0 0; font-size: 16px; line-height: 1.6; color: #55534D">Turns each flight into a count and tells you what changed.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ================= WHO ================= -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 128px 32px 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px"><h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.022em; max-width: 760px">Built for cattle you can't always see.</h2><a href="who-its-for/" style="font-size: 16px; font-weight: 600; color: #8A6D12; text-underline-offset: 4px">Who it's for</a></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 48px">
+
+<div style="background: #FFFFFF; border: 1px solid #DDD9D0; border-radius: 8px; padding: 24px">
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 18px">Owner-operators</h3>
+<p style="margin: 6px 0 0; font-size: 16px; line-height: 1.6; color: #55534D">Every paddock checked, without the drive.</p>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #DDD9D0; border-radius: 8px; padding: 24px">
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 18px">Station managers</h3>
+<p style="margin: 6px 0 0; font-size: 16px; line-height: 1.6; color: #55534D">A daily herd report for the owners.</p>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #DDD9D0; border-radius: 8px; padding: 24px">
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 18px">Agistment and absentee owners</h3>
+<p style="margin: 6px 0 0; font-size: 16px; line-height: 1.6; color: #55534D">See your cattle from anywhere.</p>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #DDD9D0; border-radius: 8px; padding: 24px">
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 18px">Multi-property operations</h3>
+<p style="margin: 6px 0 0; font-size: 16px; line-height: 1.6; color: #55534D">Every property in one account.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ================= SET UP + SUPPORT ================= -->
+<section id="setup" style="max-width: 1200px; margin: 0 auto; padding: 128px 32px 0; padding-bottom: 128px">
+<div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 1 1 420px; min-width: 0">
+<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.022em">We set it up. We keep it running.</h2>
+<p style="margin: 16px 0 0; font-size: 19px; line-height: 1.6; color: #3E3D39">No drone experience needed.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 32px">
+
+<div style="background: #FFFFFF; border: 1px solid #DDD9D0; border-radius: 8px; padding: 20px">
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 17px">Property assessment</h3>
+<p style="margin: 4px 0 0; font-size: 16px; line-height: 1.6; color: #55534D; font-size: 15px">Coverage, power and dock placement.</p>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #DDD9D0; border-radius: 8px; padding: 20px">
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 17px">Hardware and install</h3>
+<p style="margin: 4px 0 0; font-size: 16px; line-height: 1.6; color: #55534D; font-size: 15px">Chosen, installed and mapped for you.</p>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #DDD9D0; border-radius: 8px; padding: 20px">
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 17px">Australian support</h3>
+<p style="margin: 4px 0 0; font-size: 16px; line-height: 1.6; color: #55534D; font-size: 15px">A local team on the phone when you need us.</p>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #DDD9D0; border-radius: 8px; padding: 20px">
+<h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 17px">Fixed quote</h3>
+<p style="margin: 4px 0 0; font-size: 16px; line-height: 1.6; color: #55534D; font-size: 15px">No surprises after the assessment.</p>
+</div>
+
+</div>
+</div>
+<div style="flex: 1 1 440px; min-width: 0; aspect-ratio: 4 / 5; border-radius: 8px; overflow: hidden; background: #2A2620">
+<img src="assets/drone-launch-fence.jpg" alt="The drone lifting off from its dock beside a paddock fence at sunrise" style="width: 100%; height: 100%; object-fit: cover; object-position: 55% center; display: block">
+</div>
+</div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" style="background: #FFFFFF; border-top: 1px solid #DDD9D0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 112px 32px; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 300px; min-width: 0">
+<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.022em">Questions</h2>
+</div>
+<div style="flex: 2 1 600px; min-width: 0; border-top: 1px solid #0B0B0B">
+
+<details style="border-bottom: 1px solid #DDD9D0">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; min-height: 44px; margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 18px">
+<span>Does anyone need to fly the drone?</span>
+<svg class="syrax-plus" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 auto; transition: transform 0.2s"><path d="M12 5v14M5 12h14"></path></svg>
+</summary>
+<p style="margin: 0 0 24px; max-width: 44rem; font-size: 16px; line-height: 1.6; color: #55534D">No. The dock launches, lands and charges it on schedule.</p>
+</details>
+
+<details style="border-bottom: 1px solid #DDD9D0">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; min-height: 44px; margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 18px">
+<span>Do I need a drone licence?</span>
+<svg class="syrax-plus" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 auto; transition: transform 0.2s"><path d="M12 5v14M5 12h14"></path></svg>
+</summary>
+<p style="margin: 0 0 24px; max-width: 44rem; font-size: 16px; line-height: 1.6; color: #55534D">No. We handle the operating requirements as part of setup.</p>
+</details>
+
+<details style="border-bottom: 1px solid #DDD9D0">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; min-height: 44px; margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 18px">
+<span>Why do flights run mid-morning?</span>
+<svg class="syrax-plus" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 auto; transition: transform 0.2s"><path d="M12 5v14M5 12h14"></path></svg>
+</summary>
+<p style="margin: 0 0 24px; max-width: 44rem; font-size: 16px; line-height: 1.6; color: #55534D">Short shadows. Cattle under trees are easiest to see, so counts are most reliable.</p>
+</details>
+
+<details style="border-bottom: 1px solid #DDD9D0">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; min-height: 44px; margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 18px">
+<span>Will the drone stress my cattle?</span>
+<svg class="syrax-plus" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 auto; transition: transform 0.2s"><path d="M12 5v14M5 12h14"></path></svg>
+</summary>
+<p style="margin: 0 0 24px; max-width: 44rem; font-size: 16px; line-height: 1.6; color: #55534D">It flies well above the herd on the same route every day. Cattle get used to it quickly.</p>
+</details>
+
+<details style="border-bottom: 1px solid #DDD9D0">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; min-height: 44px; margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 18px">
+<span>What does my property need?</span>
+<svg class="syrax-plus" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 auto; transition: transform 0.2s"><path d="M12 5v14M5 12h14"></path></svg>
+</summary>
+<p style="margin: 0 0 24px; max-width: 44rem; font-size: 16px; line-height: 1.6; color: #55534D">Power at the dock and a mobile or satellite connection. We check both in the assessment.</p>
+</details>
+
+<details style="border-bottom: 1px solid #DDD9D0">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; min-height: 44px; margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; font-size: 18px">
+<span>What does it cost?</span>
+<svg class="syrax-plus" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 auto; transition: transform 0.2s"><path d="M12 5v14M5 12h14"></path></svg>
+</summary>
+<p style="margin: 0 0 24px; max-width: 44rem; font-size: 16px; line-height: 1.6; color: #55534D">It depends on your property. You get a fixed quote after the assessment.</p>
+</details>
+
+<p style="margin: 24px 0 0"><a href="faq/" style="font-weight: 600; text-underline-offset: 4px">See all questions</a></p>
+</div>
+</div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" style="background: #0B0B0B; color: #F2F0EA">
+<div style="max-width: 1200px; margin: 0 auto; padding: 112px 32px; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 360px; min-width: 0">
+<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.022em">Get Syrax on your property.</h2>
+<p style="margin: 16px 0 0; font-size: 19px; line-height: 1.6; color: #BDB9AE">Tell us about your property. We'll come back with a plan and a fixed quote.</p>
+<p style="margin: 32px 0 0; font-size: 16px; line-height: 1.6; color: #A9A59B">[YOUR EMAIL]<br>[YOUR PHONE]</p>
+</div>
+<form style="flex: 1 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; align-content: start">
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Name<input type="text" name="name" autocomplete="name" style="background: #FFFFFF; border: 1px solid #C9C6BD; border-radius: 4px; padding: 12px 14px; font: inherit; font-size: 16px; font-weight: 400; color: #0B0B0B"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Phone<input type="tel" name="phone" autocomplete="tel" style="background: #FFFFFF; border: 1px solid #C9C6BD; border-radius: 4px; padding: 12px 14px; font: inherit; font-size: 16px; font-weight: 400; color: #0B0B0B"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Email<input type="email" name="email" autocomplete="email" style="background: #FFFFFF; border: 1px solid #C9C6BD; border-radius: 4px; padding: 12px 14px; font: inherit; font-size: 16px; font-weight: 400; color: #0B0B0B"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Property location<input type="text" name="location" style="background: #FFFFFF; border: 1px solid #C9C6BD; border-radius: 4px; padding: 12px 14px; font: inherit; font-size: 16px; font-weight: 400; color: #0B0B0B"></label>
+<label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Approximate herd size<input type="text" name="herd" style="background: #FFFFFF; border: 1px solid #C9C6BD; border-radius: 4px; padding: 12px 14px; font: inherit; font-size: 16px; font-weight: 400; color: #0B0B0B"></label>
+<div style="grid-column: 1 / -1"><button type="button" style="text-decoration: none; color: #0B0B0B; background: #D4AF37; font-weight: 600; font-size: 16px; padding: 14px 24px; border-radius: 4px; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; border: 0; font-family: inherit; cursor: pointer">Talk to us</button></div>
+</form>
+</div>
+</section>
+
+<footer style="background: #0B0B0B; color: #A9A59B; border-top: 1px solid #222">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 32px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px; font-size: 15px">
+<div style="flex: 1 1 300px; min-width: 0">
+<img src="assets/syrax-logo-gold.png" alt="Syrax Solutions" style="height: 34px; width: auto; display: block">
+<p style="margin: 16px 0 0; max-width: 22rem">Every head counted. Every day. Automated herd monitoring for Australian grazing properties.</p>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px">
+<div><p style="margin: 0 0 10px; font-size: 14px; font-weight: 600; color: #F2F0EA">Product</p><ul style="list-style: none; margin: 0; padding: 0"><li style="padding: 5px 0"><a href="cattle-counting/" style="color: #CFCAC0; text-decoration: none">Cattle counting</a></li><li style="padding: 5px 0"><a href="water-and-feed-monitoring/" style="color: #CFCAC0; text-decoration: none">Water and feed monitoring</a></li><li style="padding: 5px 0"><a href="fence-and-welfare-checks/" style="color: #CFCAC0; text-decoration: none">Fence and welfare checks</a></li><li style="padding: 5px 0"><a href="how-it-works/" style="color: #CFCAC0; text-decoration: none">How it works</a></li></ul></div>
+<div><p style="margin: 0 0 10px; font-size: 14px; font-weight: 600; color: #F2F0EA">Company</p><ul style="list-style: none; margin: 0; padding: 0"><li style="padding: 5px 0"><a href="about/" style="color: #CFCAC0; text-decoration: none">About</a></li><li style="padding: 5px 0"><a href="who-its-for/" style="color: #CFCAC0; text-decoration: none">Who it&#x27;s for</a></li><li style="padding: 5px 0"><a href="resources/" style="color: #CFCAC0; text-decoration: none">Resources</a></li><li style="padding: 5px 0"><a href="faq/" style="color: #CFCAC0; text-decoration: none">FAQ</a></li><li style="padding: 5px 0"><a href="contact/" style="color: #CFCAC0; text-decoration: none">Contact</a></li></ul></div>
+</div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 32px 32px; border-top: 1px solid #222; font-size: 13px; color: #8F8B82">© 2026 Syrax Solutions · Sydney, Australia</div>
+</footer>
+
+</div>
+</body>
+</html>
